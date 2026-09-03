@@ -27,19 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.querySelector('.horo-nav-menu');
   if (mobileToggle && navMenu) {
     mobileToggle.addEventListener('click', () => {
-      const isOpen = navMenu.style.display === 'flex';
-      navMenu.style.display = isOpen ? 'none' : 'flex';
-      if (!isOpen) {
-        navMenu.style.flexDirection = 'column';
-        navMenu.style.position = 'absolute';
-        navMenu.style.top = '100%';
-        navMenu.style.left = '0';
-        navMenu.style.right = '0';
-        navMenu.style.background = 'var(--bg-horo-surface)';
-        navMenu.style.padding = '1.75rem';
-        navMenu.style.boxShadow = 'var(--shadow-horo)';
-        navMenu.style.borderBottom = '1px solid var(--border-horo)';
-      }
+      navMenu.classList.toggle('mobile-open');
+    });
+    // Auto-close on link click
+    document.querySelectorAll('.horo-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('mobile-open');
+      });
     });
   }
 

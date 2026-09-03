@@ -37,13 +37,12 @@
         </div>
       </a>
 
-      <ul class="horo-nav-menu">
+            <ul class="horo-nav-menu">
         <li><a href="index.php" class="horo-nav-link active">Caliber Studio</a></li>
         <li><a href="about.html" class="horo-nav-link">Horology Lab</a></li>
         <li><a href="blog.html" class="horo-nav-link">Movement Journal</a></li>
-        <li><a href="#caliber-workbench" class="horo-nav-link">Escapement Lab</a></li>
-        <li><a href="#finishing-matrix" class="horo-nav-link">Finishing Matrix</a></li>
-        <li><a href="#silicon-physics" class="horo-nav-link">Silicon Physics</a></li>
+        <li><a href="index.php#caliber-workbench" class="horo-nav-link">Escapement Lab</a></li>
+        <li><a href="index.php#finishing-matrix" class="horo-nav-link">Finishing Matrix</a></li>
         <li><a href="contact.html" class="horo-nav-link">Watchmaker Desk</a></li>
       </ul>
 
